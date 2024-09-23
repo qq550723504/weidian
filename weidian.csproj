@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\xuwei\Documents\WeChat Files\xuwexia\FileStorage\File\2024-08\微店程序\微店程序\微店新版6.18.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4C8373A-46EC-489E-9D87-2A9681CD164D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>微店新版</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Flurl">
+      <HintPath>lib\Flurl.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl.Http">
+      <HintPath>lib\Flurl.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WebDriver">
+      <HintPath>lib\WebDriver.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auxiliary\Comm\Haozhu.cs" />
+    <Compile Include="Auxiliary\Comm\Weidian.cs" />
+    <Compile Include="微店新版\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="微店新版\info.cs" />
+    <Compile Include="微店新版\CheckBoxClickedHandler.cs" />
+    <Compile Include="微店新版\DataGridViewCheckBoxHeaderCellEventArgs.cs" />
+    <Compile Include="微店新版\DatagridViewCheckBoxHeaderCell.cs" />
+    <Compile Include="微店新版\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="微店新版\StringExt.cs" />
+    <Compile Include="微店新版\LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="微店新版\Program.cs" />
+    <Compile Include="微店新版\SqLiteHelper.cs" />
+    <Compile Include="微店新版\weidian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="微店新版\inits.cs" />
+    <Compile Include="微店新版\wdauth.cs" />
+    <Compile Include="微店新版\piao.cs" />
+    <Compile Include="微店新版\card.cs" />
+    <Compile Include="微店新版\取openId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="微店新版\复活.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="微店新版\cc.cs" />
+    <Compile Include="微店新版\账密转换.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="微店新版\idcard.cs" />
+    <Compile Include="微店新版\accounts.cs" />
+    <Compile Include="微店新版\RestHttp.cs" />
+    <Compile Include="微店新版\Properties\Resources.cs" />
+    <Compile Include="微店新版\Properties\Settings.cs" />
+    <Compile Include="微店新版\注册\密码设置.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\注册\账号注册.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\注册\StringExt.cs" />
+    <Compile Include="微店新版\下单\下单.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\下单\sku.cs" />
+    <Compile Include="微店新版\下单\GetChineseNames.cs" />
+    <Compile Include="微店新版\下单\支付.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\下单\pay.cs" />
+    <Compile Include="微店新版\下单\CheckBoxClickedHandler.cs" />
+    <Compile Include="微店新版\下单\DataGridViewCheckBoxHeaderCellEventArgs.cs" />
+    <Compile Include="微店新版\下单\DatagridViewCheckBoxHeaderCell.cs" />
+    <Compile Include="微店新版\下单\核销.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\下单\kuaidi.cs" />
+    <Compile Include="微店新版\下单\评论.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\下单\账号设置.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\下单\imgs.cs" />
+    <Compile Include="微店新版\下单\速刷下单.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\Tool\一键复制上架.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\Tool\ItemCopy.cs" />
+    <Compile Include="微店新版\Tool\Item.cs" />
+    <Compile Include="微店新版\Tool\Root.cs" />
+    <Compile Include="微店新版\Tool\水印.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\Tool\itemsKu.cs" />
+    <Compile Include="微店新版\Tool\采集评论.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="微店新版\Tool\SkucommentList.cs" />
+    <Compile Include="微店新版\HTTP\flurl.cs" />
+    <Compile Include="微店新版\HTTP\auths.cs" />
+    <Compile Include="微店新版\HTTP\MyHttp.cs" />
+    <Compile Include="微店新版\H5\H5Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyWindowClient\DbHelper\MYSQL.cs" />
+    <Compile Include="Maticsoft\DBUtility\DbHelperMySQL.cs" />
+    <Compile Include="Auxiliary\HTTP\HttpHelperAsync.cs" />
+    <Compile Include="Auxiliary\HTTP\HttpRequestEntity.cs" />
+    <Compile Include="Auxiliary\HTTP\MYHTTP.cs" />
+    <Compile Include="Auxiliary\Comm\COMM.cs" />
+    <Compile Include="Auxiliary\Comm\IniFiles.cs" />
+    <Compile Include="Auxiliary\Comm\param.cs" />
+    <Compile Include="Auxiliary\Comm\Model.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UA.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
